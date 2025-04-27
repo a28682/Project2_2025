@@ -13,9 +13,9 @@ GPIO.setup(channel, GPIO.IN)
 
 def check_status():
 	if GPIO.input(channel):
-		return "Please water your plant"
-	else:
 		return "Water not needed"
+	else:
+		return "Please water your plant"
 
 
 def send_email(status):
