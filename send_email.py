@@ -2,7 +2,7 @@ import smtplib
 from email.message import EmailMessage
 
 from_email_addr = "2867218760@qq.com"
-from_email_pass = "waompooggbgeddbd" # 确保这是QQ邮箱的授权码，不是密码
+from_email_pass = "waompooggbgeddbd" 
 to_email_addr = "3025977257@qq.com"
 
 msg = EmailMessage()
@@ -14,7 +14,7 @@ msg["Subject"] = "TEST EMAIL"
 
 server = smtplib.SMTP_SSL("smtp.qq.com", 465)
 server.login(from_email_addr, from_email_pass)
-server.send_message(msg) # 发送邮件
+server.send_message(msg) # send email
 server.quit() # 关闭连接
 
-print("邮件发送成功！")
+print("Email sent！")
