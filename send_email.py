@@ -14,7 +14,7 @@ msg["Subject"] = "TEST EMAIL"
 
 server = smtplib.SMTP_SSL("smtp.qq.com", 465)
 server.login(from_email_addr, from_email_pass)
-server.send_message(msg) # send email
-server.quit() # 关闭连接
+server.send_message(msg) 
+server.quit() 
 
 print("Email sent！")
